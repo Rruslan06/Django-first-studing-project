@@ -1,0 +1,11 @@
+li a {
+    color: green;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: white url(images/Logo.png) no-repeat;
+}
+
