@@ -8,7 +8,7 @@
 <body>
     
 <form action="{% url 'first_app:vote' question.id %}" method="post">
-    {% csrf_token %}
+    {% csrf_token %} <!--Защита от атаки «Межсайтовая подделка запроса». Без этой «печати» Django не примет POST-запрос от браузера, считая его враждебным.-->
 
     <fieldset>
         <legend><h1> {{question.question_text}} </h1></legend>

@@ -23,5 +23,8 @@ class QuestionAdmin(admin.ModelAdmin):
 
     search_fields = ["question_text"]
 
+
+#Принцип наименьших привилегий и инкапсуляция интерфейса управления
+#Даем только те таблицы в админку, чтобы менеджеры и другие пользователи ничего не сломали
 admin.site.register(Question, QuestionAdmin)
 
